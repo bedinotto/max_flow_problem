@@ -11,7 +11,7 @@ def randomize(n):
     return random.randint(1, n)
 
 def saveToFile(n_edges):
-    filename = f"./src/graphs/Exec_"+sys.argv[1]+"-V_"+sys.argv[2]+"-E_"+sys.argv[3]+"-raw_data"
+    filename = f"./src/graphs/Exec_V-"+sys.argv[1]+"_E-"+sys.argv[2]+"_TIME-"+sys.argv[3]+"-raw_data"
     with open(filename, "w") as file:
         v1 = N_VERTICES + 1
         for i in range(n_edges):
@@ -24,6 +24,7 @@ def saveToFile(n_edges):
             else:
                 v2 -= 1
             file.write(f"{v1};{v2};{random.randint(0, MAX_WEIGHT)}\n")
+    file.close()
 
 # def main():
 random.seed(time.time())

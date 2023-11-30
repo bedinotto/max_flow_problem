@@ -1,5 +1,6 @@
 # Python implementation of Dinic's Algorithm
 import sys
+import time
 
 
 class Edge:
@@ -124,7 +125,7 @@ class Graph:
 		# return maximum flow
 		return total
 
-file = open("./src/graphs/Exec_"+sys.argv[1]+"-V_"+sys.argv[2]+"-E_"+sys.argv[3]+"-raw_data", "r")
+file = open("./src/graphs/Exec_V-"+sys.argv[1]+"_E-"+sys.argv[2]+"_TIME-"+sys.argv[3]+"-raw_data", "r")
 
 g = Graph(int(sys.argv[1]))
 for line in file:
@@ -133,8 +134,12 @@ for line in file:
 	# print(line)
 	g.addEdge(int(line[0])-1, int(line[1]), int(line[2]))
 
-print("Source = 0, Sink = ", int(sys.argv[4]))
-print(" ------> Maximum flow Dinic: ", g.DinicMaxflow(0, int(sys.argv[4])))
+file.close()
+
+print(" ------ Source = 0, Sink = ", int(sys.argv[4]))
+start_time = time.time()
+print(" ------ Maximum flow Dinic: ", g.DinicMaxflow(0, int(sys.argv[4])))
+print("####### %s seconds to execute #######" % (time.time() - start_time))
 
 # This code is contributed by rupasriachanta421.
 

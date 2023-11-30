@@ -7,7 +7,7 @@
 # - src/Scipy_EK.py
 # - src/Scipy_Dinic.py
 
-DEPENDENCIES="src/generate_graph.py src/Dinic.py src/Edmonds_Karp.py src/Scipy_EK.py src/Scipy_Dinic.py"
+DEPENDENCIES="src/generate_GRAPH.py src/Dinic.py src/Edmonds_Karp.py src/Scipy_EK.py src/Scipy_Dinic.py src/summarize_data.py"
 for FILE in $DEPENDENCIES
 do
     [ -f $FILE ] || {
@@ -61,74 +61,85 @@ RAND_NUM=$(echo "$((1 + $RANDOM % $N_MAX))")
 echo "RAND_NUM: $RAND_NUM"
 
 TIMESTAMP=$(date +%Y%m%d%H%M%S)
-STATS_FILE="results/Exec_$N_VERTICES-V_$N_EDGES-E_$TIMESTAMP-stats.txt"
+STATS_FILE="results/Exec_V-$N_VERTICES-_E-$N_EDGES-_TIME-$TIMESTAMP-results.data"
 
 echo "=========================================================="
 echo " Genarating graph with $N_VERTICES vertices and $N_EDGES edges"
-TIMESTAMP_BEGIN=$(date +%Y%m%d%H%M%S)
-python3 src/generate_graph.py $N_VERTICES $N_EDGES $TIMESTAMP
-TIMESTAMP_END=$(date +%Y%m%d%H%M%S)
+TIMESTAMP_BEGIN=$(date +%s)
+python3 src/generate_GRAPH.py $N_VERTICES $N_EDGES $TIMESTAMP
+TIMESTAMP_END=$(date +%s)
 echo " Graph generated in $((TIMESTAMP_END - TIMESTAMP_BEGIN)) seconds" >> $STATS_FILE
 echo " Graph generated "
 echo "=========================================================="
 echo "" 
 
-
-
 echo "==========================================================" >> $STATS_FILE
 echo " ------ Executing Edmonds Karp $N_TIMES_EXEC times ------ " >> $STATS_FILE
+echo " ------ Executing Edmonds Karp $N_TIMES_EXEC times ------ " 
 
 for i in $(seq 1 $N_TIMES_EXEC)
 do
     echo "Iteration $i"
-    TIMESTAMP_BEGIN=$(date +%Y%m%d%H%M%S)
+    TIMESTAMP_BEGIN=$(date +%s)
     python3 src/Edmonds_Karp.py $N_VERTICES $N_EDGES $TIMESTAMP $RAND_NUM >> $STATS_FILE
-    TIMESTAMP_END=$(date +%Y%m%d%H%M%S)
-    echo " Edmonds Karp $i executed in $((TIMESTAMP_END - TIMESTAMP_BEGIN)) seconds" >> $STATS_FILE
+    TIMESTAMP_END=$(date +%s)
+    echo "####### $((TIMESTAMP_END - TIMESTAMP_BEGIN)) seconds Edmonds_Karp $i total" >> $STATS_FILE
     echo "____________________________________" >> $STATS_FILE
 done
 
+
+
+
 echo "==========================================================" >> $STATS_FILE
 echo " ------ Executing Dinic $N_TIMES_EXEC times ------ " >> $STATS_FILE
+echo " ------ Executing Dinic $N_TIMES_EXEC times ------ "
 echo "=========================================================="
 for i in $(seq 1 $N_TIMES_EXEC)
 do
     echo "Iteration $i"
-    TIMESTAMP_BEGIN=$(date +%Y%m%d%H%M%S)
+    TIMESTAMP_BEGIN=$(date +%s)
     python3 src/Dinic.py $N_VERTICES $N_EDGES $TIMESTAMP $RAND_NUM >> $STATS_FILE
-    TIMESTAMP_END=$(date +%Y%m%d%H%M%S)
-    echo " Dinic execution $i executed in $((TIMESTAMP_END - TIMESTAMP_BEGIN)) seconds" >> $STATS_FILE
+    TIMESTAMP_END=$(date +%s)
+    echo "####### $((TIMESTAMP_END - TIMESTAMP_BEGIN)) seconds Dinic $i total" >> $STATS_FILE
     echo "____________________________________" >> $STATS_FILE
 done
 echo "" 
 
 echo "==========================================================" >> $STATS_FILE
 echo " ------ Executing EK FROM SCIPY $N_TIMES_EXEC times ------ " >> $STATS_FILE
+echo " ------ Executing EK FROM SCIPY $N_TIMES_EXEC times ------ "
 echo "=========================================================="
 for i in $(seq 1 $N_TIMES_EXEC)
 do
     echo "Iteration $i"
-    TIMESTAMP_BEGIN=$(date +%Y%m%d%H%M%S)
+    TIMESTAMP_BEGIN=$(date +%s)
     python3 src/Scipy_EK.py $N_VERTICES $N_EDGES $TIMESTAMP $RAND_NUM >> $STATS_FILE
-    TIMESTAMP_END=$(date +%Y%m%d%H%M%S)
-    echo " Scipy_EK execution $i executed in $((TIMESTAMP_END - TIMESTAMP_BEGIN)) seconds" >> $STATS_FILE
+    TIMESTAMP_END=$(date +%s)
+    echo "####### $((TIMESTAMP_END - TIMESTAMP_BEGIN)) seconds Scipy_EK $i total" >> $STATS_FILE
     echo "____________________________________" >> $STATS_FILE
 done
 echo "" 
 
 echo "==========================================================" >> $STATS_FILE
 echo " ------ Executing DINIC FROM SCIPY $N_TIMES_EXEC times ------ " >> $STATS_FILE
+echo " ------ Executing DINIC FROM SCIPY $N_TIMES_EXEC times ------ "
 echo "=========================================================="
 for i in $(seq 1 $N_TIMES_EXEC)
 do
     echo "Iteration $i"
-    TIMESTAMP_BEGIN=$(date +%Y%m%d%H%M%S)
+    TIMESTAMP_BEGIN=$(date +%s)
     python3 src/Scipy_Dinic.py $N_VERTICES $N_EDGES $TIMESTAMP $RAND_NUM >> $STATS_FILE
-    TIMESTAMP_END=$(date +%Y%m%d%H%M%S)
-    echo " Scipy_Dinic execution $i executed in $((TIMESTAMP_END - TIMESTAMP_BEGIN)) seconds" >> $STATS_FILE
+    TIMESTAMP_END=$(date +%s)
+    echo "####### $((TIMESTAMP_END - TIMESTAMP_BEGIN)) seconds Scipy_Dinic $i total" >> $STATS_FILE
     echo "____________________________________" >> $STATS_FILE
 done
-echo "" 
+echo "==========================================================" >> $STATS_FILE
+echo "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&" >> $STATS_FILE
+
+echo "=========================================================="
+echo " Generating summary of results"
+SUMMARY_FILE="results/Exec_V-$N_VERTICES-_E-$N_EDGES-_TIME-$TIMESTAMP-results.summary"
+python3 src/summarize_data.py $N_VERTICES $N_EDGES $TIMESTAMP $RAND_NUM $STATS_FILE $N_TIMES_EXEC >> $SUMMARY_FILE
 
 sudo chown -R $USER results
 

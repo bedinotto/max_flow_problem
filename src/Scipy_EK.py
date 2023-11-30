@@ -1,9 +1,10 @@
 import sys
-# import numpy as np
+import time
+
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import maximum_flow
 
-file = open("./src/graphs/Exec_"+sys.argv[1]+"-V_"+sys.argv[2]+"-E_"+sys.argv[3]+"-raw_data", "r")
+file = open("./src/graphs/Exec_V-"+sys.argv[1]+"_E-"+sys.argv[2]+"_TIME-"+sys.argv[3]+"-raw_data", "r")
 
 def read_graph(file):
 	# create a graph with a matrix of adjacencies of size VxV
@@ -18,5 +19,9 @@ def read_graph(file):
 
 graph = read_graph(file)
 
-print("Source = 0, Sink = ", int(sys.argv[4]))
-print (" ------> Maximum flow EK FROM SCIPY: ", maximum_flow(csr_matrix(graph), 0, int(sys.argv[4]), method='edmonds_karp').flow_value)
+file.close()
+
+print(" ------ Source = 0, Sink = ", int(sys.argv[4]))
+start_time = time.time()
+print(" ------ Maximum flow EK FROM SCIPY: ", maximum_flow(csr_matrix(graph), 0, int(sys.argv[4]), method='edmonds_karp').flow_value)
+print("####### %s seconds to execute #######" % (time.time() - start_time))

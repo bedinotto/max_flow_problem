@@ -2,6 +2,7 @@
 # of Ford Fulkerson algorithm
 import sys
 from collections import defaultdict
+import time
 
 
 # This class represents a directed graph 
@@ -88,7 +89,7 @@ class Graph:
 		return max_flow
 
 
-file = open("./src/graphs/Exec_"+sys.argv[1]+"-V_"+sys.argv[2]+"-E_"+sys.argv[3]+"-raw_data", "r")
+file = open("./src/graphs/Exec_V-"+sys.argv[1]+"_E-"+sys.argv[2]+"_TIME-"+sys.argv[3]+"-raw_data", "r")
 
 def read_graph(file):
 	# create a graph with a matrix of adjacencies of size VxV
@@ -103,9 +104,13 @@ def read_graph(file):
 
 graph = read_graph(file)
 
+file.close()
+
 g = Graph(graph)
 
-print("Source = 0, Sink = ", int(sys.argv[4]))
-print (" ------> Maximum flow EK: ", g.FordFulkerson(0, int(sys.argv[4])))
+print(" ------ Source = 0, Sink = ", int(sys.argv[4]))
+start_time = time.time()
+print(" ------ Maximum flow EK: ", g.FordFulkerson(0, int(sys.argv[4])))
+print("####### %s seconds to execute #######" % (time.time() - start_time))
 
 # This code is contributed by Neelam Yadav
