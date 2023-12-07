@@ -1,0 +1,83 @@
+Opening files...
+['Exec_V-1000-_E-100000-_TIME-20231207154321-results.data', 'Exec_V-1000-_E-1000000-_TIME-20231207154616-results.summary', 'CHARTS.txt', 'Exec_V-1000-_E-10000-_TIME-20231207154239-results.data', 'Exec_V-1000-_E-20000-_TIME-20231207154247-results.summary', 'Exec_V-1000-_E-500000-_TIME-20231207154359-results.data', 'Exec_V-1000-_E-500000-_TIME-20231207154359-results.summary', 'Exec_V-1000-_E-50000-_TIME-20231207154255-results.summary', 'Exec_V-1000-_E-10000-_TIME-20231207154239-results.summary', 'Exec_V-1000-_E-20000-_TIME-20231207154247-results.data', 'Exec_V-1000-_E-5000-_TIME-20231207154231-results.summary', 'Exec_V-1000-_E-1000-_TIME-20231207154226-results.summary', 'Exec_V-1000-_E-50000-_TIME-20231207154255-results.data', 'Exec_V-1000-_E-5000-_TIME-20231207154231-results.data', 'Exec_V-1000-_E-1000000-_TIME-20231207154616-results.data', 'Exec_V-1000-_E-1000-_TIME-20231207154226-results.data', 'Exec_V-1000-_E-100000-_TIME-20231207154321-results.summary']
+Entry:  Exec_V-1000-_E-100000-_TIME-20231207154321-results.data
+Entry:  Exec_V-1000-_E-1000000-_TIME-20231207154616-results.summary
+Matched:  Exec_V-1000-_E-1000000-_TIME-20231207154616-results.summary
+File:  Exec_V-1000-_E-1000000-_TIME-20231207154616-results.summary
+Line:  Results for:  1000 vertices,  1000000 edges,  20231207154616 timestamp,  433 rand_sink,  10 n_execs
+
+Algorithm counter:  0
+Algorithm counter:  1
+Algorithm counter:  2
+Algorithm counter:  3
+Entry:  CHARTS.txt
+Entry:  Exec_V-1000-_E-10000-_TIME-20231207154239-results.data
+Entry:  Exec_V-1000-_E-20000-_TIME-20231207154247-results.summary
+Matched:  Exec_V-1000-_E-20000-_TIME-20231207154247-results.summary
+File:  Exec_V-1000-_E-20000-_TIME-20231207154247-results.summary
+Line:  Results for:  1000 vertices,  20000 edges,  20231207154247 timestamp,  284 rand_sink,  10 n_execs
+
+Algorithm counter:  4
+Algorithm counter:  5
+Algorithm counter:  6
+Algorithm counter:  7
+Entry:  Exec_V-1000-_E-500000-_TIME-20231207154359-results.data
+Entry:  Exec_V-1000-_E-500000-_TIME-20231207154359-results.summary
+Matched:  Exec_V-1000-_E-500000-_TIME-20231207154359-results.summary
+File:  Exec_V-1000-_E-500000-_TIME-20231207154359-results.summary
+Line:  Results for:  1000 vertices,  500000 edges,  20231207154359 timestamp,  991 rand_sink,  10 n_execs
+
+Algorithm counter:  8
+Algorithm counter:  9
+Algorithm counter:  10
+Algorithm counter:  11
+Entry:  Exec_V-1000-_E-50000-_TIME-20231207154255-results.summary
+Matched:  Exec_V-1000-_E-50000-_TIME-20231207154255-results.summary
+File:  Exec_V-1000-_E-50000-_TIME-20231207154255-results.summary
+Line:  Results for:  1000 vertices,  50000 edges,  20231207154255 timestamp,  961 rand_sink,  10 n_execs
+
+Algorithm counter:  12
+Algorithm counter:  13
+Algorithm counter:  14
+Algorithm counter:  15
+Entry:  Exec_V-1000-_E-10000-_TIME-20231207154239-results.summary
+Matched:  Exec_V-1000-_E-10000-_TIME-20231207154239-results.summary
+File:  Exec_V-1000-_E-10000-_TIME-20231207154239-results.summary
+Line:  Results for:  1000 vertices,  10000 edges,  20231207154239 timestamp,  606 rand_sink,  10 n_execs
+
+Algorithm counter:  16
+Algorithm counter:  17
+Algorithm counter:  18
+Algorithm counter:  19
+Entry:  Exec_V-1000-_E-20000-_TIME-20231207154247-results.data
+Entry:  Exec_V-1000-_E-5000-_TIME-20231207154231-results.summary
+Matched:  Exec_V-1000-_E-5000-_TIME-20231207154231-results.summary
+File:  Exec_V-1000-_E-5000-_TIME-20231207154231-results.summary
+Line:  Results for:  1000 vertices,  5000 edges,  20231207154231 timestamp,  929 rand_sink,  10 n_execs
+
+Algorithm counter:  20
+Algorithm counter:  21
+Algorithm counter:  22
+Algorithm counter:  23
+Entry:  Exec_V-1000-_E-1000-_TIME-20231207154226-results.summary
+Matched:  Exec_V-1000-_E-1000-_TIME-20231207154226-results.summary
+File:  Exec_V-1000-_E-1000-_TIME-20231207154226-results.summary
+Line:  Results for:  1000 vertices,  1000 edges,  20231207154226 timestamp,  342 rand_sink,  10 n_execs
+
+Algorithm counter:  24
+Algorithm counter:  25
+Algorithm counter:  26
+Algorithm counter:  27
+Entry:  Exec_V-1000-_E-50000-_TIME-20231207154255-results.data
+Entry:  Exec_V-1000-_E-5000-_TIME-20231207154231-results.data
+Entry:  Exec_V-1000-_E-1000000-_TIME-20231207154616-results.data
+Entry:  Exec_V-1000-_E-1000-_TIME-20231207154226-results.data
+Entry:  Exec_V-1000-_E-100000-_TIME-20231207154321-results.summary
+Matched:  Exec_V-1000-_E-100000-_TIME-20231207154321-results.summary
+File:  Exec_V-1000-_E-100000-_TIME-20231207154321-results.summary
+Line:  Results for:  1000 vertices,  100000 edges,  20231207154321 timestamp,  920 rand_sink,  10 n_execs
+
+Algorithm counter:  28
+Algorithm counter:  29
+Algorithm counter:  30
+Algorithm counter:  31

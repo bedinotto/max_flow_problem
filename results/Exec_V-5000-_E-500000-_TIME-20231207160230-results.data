@@ -1,0 +1,211 @@
+ Graph generated in 1 seconds
+==========================================================
+ ------ Executing Edmonds Karp 10 times ------ 
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK:  4111
+####### 87.3272352218628 seconds to execute #######
+####### 88 seconds Edmonds_Karp 1 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK:  4111
+####### 86.56757307052612 seconds to execute #######
+####### 87 seconds Edmonds_Karp 2 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK:  4111
+####### 86.5423412322998 seconds to execute #######
+####### 88 seconds Edmonds_Karp 3 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK:  4111
+####### 86.53736114501953 seconds to execute #######
+####### 87 seconds Edmonds_Karp 4 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK:  4111
+####### 86.47768712043762 seconds to execute #######
+####### 87 seconds Edmonds_Karp 5 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK:  4111
+####### 86.71588611602783 seconds to execute #######
+####### 88 seconds Edmonds_Karp 6 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK:  4111
+####### 86.56091117858887 seconds to execute #######
+####### 87 seconds Edmonds_Karp 7 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK:  4111
+####### 86.45694208145142 seconds to execute #######
+####### 88 seconds Edmonds_Karp 8 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK:  4111
+####### 86.6320538520813 seconds to execute #######
+####### 87 seconds Edmonds_Karp 9 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK:  4111
+####### 88.2913920879364 seconds to execute #######
+####### 89 seconds Edmonds_Karp 10 total
+____________________________________
+==========================================================
+ ------ Executing Dinic 10 times ------ 
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow Dinic:  4176
+####### 1.9724221229553223 seconds to execute #######
+####### 3 seconds Dinic 1 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow Dinic:  4176
+####### 1.8662922382354736 seconds to execute #######
+####### 3 seconds Dinic 2 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow Dinic:  4176
+####### 1.93812894821167 seconds to execute #######
+####### 3 seconds Dinic 3 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow Dinic:  4176
+####### 1.9131629467010498 seconds to execute #######
+####### 3 seconds Dinic 4 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow Dinic:  4176
+####### 1.9102740287780762 seconds to execute #######
+####### 3 seconds Dinic 5 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow Dinic:  4176
+####### 1.9627101421356201 seconds to execute #######
+####### 3 seconds Dinic 6 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow Dinic:  4176
+####### 1.8566901683807373 seconds to execute #######
+####### 3 seconds Dinic 7 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow Dinic:  4176
+####### 1.935439109802246 seconds to execute #######
+####### 3 seconds Dinic 8 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow Dinic:  4176
+####### 1.9011437892913818 seconds to execute #######
+####### 3 seconds Dinic 9 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow Dinic:  4176
+####### 1.8993401527404785 seconds to execute #######
+####### 3 seconds Dinic 10 total
+____________________________________
+==========================================================
+ ------ Executing EK FROM SCIPY 10 times ------ 
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK FROM SCIPY:  4111
+####### 0.8621540069580078 seconds to execute #######
+####### 2 seconds Scipy_EK 1 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK FROM SCIPY:  4111
+####### 0.8455171585083008 seconds to execute #######
+####### 2 seconds Scipy_EK 2 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK FROM SCIPY:  4111
+####### 0.8412249088287354 seconds to execute #######
+####### 2 seconds Scipy_EK 3 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK FROM SCIPY:  4111
+####### 0.8453361988067627 seconds to execute #######
+####### 1 seconds Scipy_EK 4 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK FROM SCIPY:  4111
+####### 0.8567068576812744 seconds to execute #######
+####### 2 seconds Scipy_EK 5 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK FROM SCIPY:  4111
+####### 0.9300992488861084 seconds to execute #######
+####### 2 seconds Scipy_EK 6 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK FROM SCIPY:  4111
+####### 0.8544650077819824 seconds to execute #######
+####### 2 seconds Scipy_EK 7 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK FROM SCIPY:  4111
+####### 0.8633852005004883 seconds to execute #######
+####### 2 seconds Scipy_EK 8 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK FROM SCIPY:  4111
+####### 0.851733922958374 seconds to execute #######
+####### 2 seconds Scipy_EK 9 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow EK FROM SCIPY:  4111
+####### 0.8641128540039062 seconds to execute #######
+####### 2 seconds Scipy_EK 10 total
+____________________________________
+==========================================================
+ ------ Executing DINIC FROM SCIPY 10 times ------ 
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow DINIC FROM SCIPY:  4111
+####### 0.7966940402984619 seconds to execute #######
+####### 1 seconds Scipy_Dinic 1 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow DINIC FROM SCIPY:  4111
+####### 0.7881410121917725 seconds to execute #######
+####### 2 seconds Scipy_Dinic 2 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow DINIC FROM SCIPY:  4111
+####### 0.8069391250610352 seconds to execute #######
+####### 2 seconds Scipy_Dinic 3 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow DINIC FROM SCIPY:  4111
+####### 0.7908899784088135 seconds to execute #######
+####### 2 seconds Scipy_Dinic 4 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow DINIC FROM SCIPY:  4111
+####### 0.7851347923278809 seconds to execute #######
+####### 2 seconds Scipy_Dinic 5 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow DINIC FROM SCIPY:  4111
+####### 0.7983062267303467 seconds to execute #######
+####### 1 seconds Scipy_Dinic 6 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow DINIC FROM SCIPY:  4111
+####### 0.7888181209564209 seconds to execute #######
+####### 2 seconds Scipy_Dinic 7 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow DINIC FROM SCIPY:  4111
+####### 0.8324670791625977 seconds to execute #######
+####### 2 seconds Scipy_Dinic 8 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow DINIC FROM SCIPY:  4111
+####### 0.800264835357666 seconds to execute #######
+####### 2 seconds Scipy_Dinic 9 total
+____________________________________
+ ------ Source = 0, Sink =  1093
+ ------ Maximum flow DINIC FROM SCIPY:  4111
+####### 0.7860379219055176 seconds to execute #######
+####### 1 seconds Scipy_Dinic 10 total
+____________________________________
+==========================================================
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&

@@ -1,0 +1,5 @@
+Results for:  5000 vertices,  20000 edges,  20231207155310 timestamp,  4213 rand_sink,  10 n_execs
+Edmonds Karp real time mean: 8.416451 , std: 0.01583911 total time mean: 9.0 , std: 0.0
+Dinic real time mean: 0.054483604 , std: 0.0022237764 total time mean: 0.1 , std: 0.29999998
+Scipy_EK real time mean: 0.7119651 , std: 0.0027340713 total time mean: 1.5 , std: 0.5
+Scipy_Dinic real time mean: 0.7158963 , std: 0.004036183 total time mean: 1.4 , std: 0.48989797
